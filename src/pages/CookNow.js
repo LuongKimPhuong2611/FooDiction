@@ -138,7 +138,7 @@ function Cook() {
       <div className="view-under">
       <div className ="view-side">
       <h1 className="heading3" data-aos="fade-up">
-        <span>Your ingredient</span> hear:
+        <span>Your ingredient</span> here:
       </h1>
 
       <div className="ingredients">
