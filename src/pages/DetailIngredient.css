@@ -1,0 +1,80 @@
+.health-beni {
+  /* display: flex; */
+  text-align: left;
+  /* list-style-type: none; */
+}
+.page {
+  background: var(--white);
+  padding: 1rem;
+}
+.beni {
+  font-size: 1.3rem;
+  padding: 0.2rem;
+  color: var(--green);
+  margin-left: 5%;
+}
+.discription {
+  font-size: 1.2rem;
+  padding: 0.1rem;
+  margin-left: 5%;
+  color: var(--black);
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col-6 {
+  border-radius: 10px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  width: 45%;
+  margin-bottom: 2rem;
+}
+
+.ingredient__img {
+  position: absolute;
+  top: 5%;
+  right: 15%;
+  width: 70%;
+  max-width: 90%;
+  height: 70%;
+  max-height: 80%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.ingredient__pic-wrap {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  padding-top: 90%;
+  /* overflow: hidden; */
+}
+
+.section-heading {
+  font-family: "Raleway-bold";
+  text-align: center;
+  position: relative;
+  color: var(--green);
+}
+
+.section-heading2 {
+  font-family: "Raleway-bold";
+  text-align: center;
+  position: relative;
+  color: var(--green);
+}
+
+@media only screen and (max-width: 900px) {
+  .col-6 {
+    width: 100%;
+  }
+}
+
+.part-3{
+  padding-top: 2rem;
+}
