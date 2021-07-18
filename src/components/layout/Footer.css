@@ -1,54 +1,117 @@
 .footer-container {
   background-color: var(--green);
-  padding: 2rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  font-family: "Raleway-medium"
+  font-family: "Raleway-medium";
 }
 
 .footer-subscription {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  /* width: 100%; */
+}
+.left-footer{
+position: relative;
+display: flex;
+width: 40%;
+}
+.rasberry{
+  width: 100%;
+  /* position: relative;
+  display: flex; */
+}
+.under-view{
+  display: flex;
+  position: relative;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 24px;
   color: white;
+  width: 100%;
 }
+
+.right-footer{
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  }
 
 .footer-subscription > p {
   font-family: "Raleway-medium";
 }
 
 .footer-subscription-heading {
-  margin-bottom: 24px;
-  font-size: 24px;
+  font-size: 28px;
+  margin-top: 1rem;
+  font-family: "Raleway-bold";
+  text-align: center;
+  color: white;
 }
 
 .footer-subscription-text {
   margin-bottom: 24px;
-  font-size: 20px;
 }
 
+.input-areas{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.sub-btn{
+  margin: 0rem 1rem;
+  font-size: 1.2rem;
+  position: relative;
+  display: flex;
+  width: 7rem;
+  height: 2.6rem;
+  padding: 0.5rem;
+  /* background: transparent; */
+  color: white;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.2rem;
+  border: 1px solid white;
+}
+.sub-btn:hover{
+  color: var(--green);
+  cursor: pointer;
+  background: white;
+}
 .footer-input {
-  padding: 8px 20px;
+  padding: 10px 20px;
   border-radius: 2px;
-  margin-right: 10px;
+  color: var(--green);
+  position: relative;
+  justify-content: center;
+  margin-left: 5px;
+  display: flex;
   outline: none;
   border: none;
   font-size: 18px;
-  margin-bottom: 16px;
   border: 1px solid white;
+  width: 100%;
 }
 
 .footer-links {
-  width: 50%;
-  max-width: 1000px;
+  position: relative;
+  width: 100%;
+  /* max-width: 1000px; */
   display: flex;
-  justify-content: center;
-  margin-top: -2rem;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .footer-link-wrapper {
@@ -58,25 +121,33 @@
 .footer-link-items {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   margin: 16px;
-  text-align: left;
-  width: 160px;
+  text-align: center;
+  /* width: 100%; */
   box-sizing: border-box;
+  justify-content: center;
 }
 
 .footer-link-items h2 {
   margin-bottom: 16px;
+  text-align: center;
+  justify-content: center;
 }
 
 .footer-link-items > h2 {
   color: white;
+  text-align: center;
+  justify-content: center;
 }
 
 .footer-link-items a {
   color: white;
   text-decoration: none;
   margin-bottom: 0.5rem;
+  font-size: 1rem;
+  justify-content: center;
+  text-align: center;
 }
 
 .footer-link-items a:hover {
@@ -99,17 +170,17 @@
 }
 
 .social-media {
-  max-width: 1000px;
-  width: 100%;
+  /* max-width: 1000px; */
+  width: 80%;
 }
 
 .social-media-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  max-width: 1000px;
-  margin:1rem auto 0 auto;
+  width: 80%;
+  /* max-width: 1000px; */
+  margin:0 auto 0 auto;
 }
 
 .social-icons {
@@ -125,10 +196,11 @@
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+  font-family: "Raleway-bold";
 }
 
 .website-rights {
@@ -160,9 +232,7 @@
 
 @media screen and (max-width: 768px) {
 }
-section.subscribe{
-  background:var(--primary);
-}
+
 section.subscribe .container > div:first-child img{
   width:90%;
 }
@@ -224,4 +294,8 @@ section.subscribe .input-wrap button{
 }
 section.subscribe .input-wrap button:hover{
   background:white;
+}
+.right-footer{
+  justify-content: center;
+  text-align: center;
 }

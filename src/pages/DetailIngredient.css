@@ -5,7 +5,6 @@
 }
 .page {
   background: var(--white);
-  padding: 1rem;
 }
 .beni {
   font-size: 1.3rem;
@@ -32,7 +31,6 @@
   align-content: center;
   text-align: center;
   width: 45%;
-  margin-bottom: 2rem;
 }
 
 .ingredient__img {
@@ -76,5 +74,28 @@
 }
 
 .part-3{
-  padding-top: 2rem;
+  padding-top: 12rem;
+}
+.highlight{
+  height:5rem;
+  background: white;
+  width: 100%;
+  display: flex;
+  margin-top: -6rem;
+justify-content: center;
+}
+.item{
+width: 8%;
+height: 80%;
+margin: 0.65% 2rem;
+color: white;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+text-align: center;
+background: var(--green);
+border-radius: 1.2rem;
+}
+.number-item{
+  font-family: "Raleway-bold";
 }

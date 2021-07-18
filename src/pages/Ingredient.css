@@ -13,3 +13,7 @@
 .heading span {
     color: var(--green);
 }
+.tab-ingre{
+    position: relative;
+    margin-top: 2rem;
+}

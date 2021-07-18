@@ -26,7 +26,7 @@ function Ingredient() {
 
   if (searchTerm.length === 0) {
     return (
-      <div className = "ingredient-page">
+      <div className="ingredient-page">
         <h1 className="heading" data-aos="fade-up">
           What <span>ingredient</span> you want to <span>explore</span>?
         </h1>
@@ -41,7 +41,7 @@ function Ingredient() {
                 setSearchTerm(e.target.value);
               }}
             />
-{(searchTerm.length>0)?
+            {searchTerm.length > 0 ? (
               <div
                 onClick={() => {
                   setSearchTerm("");
@@ -49,17 +49,19 @@ function Ingredient() {
                 className="button"
               >
                 <p>Clear</p>
-              </div>: null
-            }
+              </div>
+            ) : null}
           </div>
         </div>
-        <Tabs />
+        <div className="tab-ingre" >
+        <Tabs/>
+        </div>
       </div>
     );
   } else {
   }
   return (
-    <div className = "ingredient-page">
+    <div className="ingredient-page">
       <h1 className="heading" data-aos="fade-up">
         What <span>ingredient</span> you want to <span>explore</span>?
       </h1>
@@ -75,16 +77,16 @@ function Ingredient() {
               setSearchTerm(e.target.value);
             }}
           />
-{(searchTerm.length>0)?
-              <div
-                onClick={() => {
-                  setSearchTerm("");
-                }}
-                className="button"
-              >
-                <p>Clear</p>
-              </div>: null
-            }
+          {searchTerm.length > 0 ? (
+            <div
+              onClick={() => {
+                setSearchTerm("");
+              }}
+              className="button"
+            >
+              <p>Clear</p>
+            </div>
+          ) : null}
         </div>
       </div>
       {<ListIngredient ingredients={tempList} />}

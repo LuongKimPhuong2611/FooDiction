@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '../layout/Button';
 import './HeroSection.css';
+import { Link } from 'react-router-dom';
 
 function HeroSection() {
   return (
@@ -8,7 +9,7 @@ function HeroSection() {
       <video src='/videos/video-1.mp4' autoPlay loop muted />
       <h1>FOOD DICTIONARY</h1>
       {/* <p>What are you waiting for?</p> */}
-      <div className='hero-btns'>
+      <Link to='/explore' className='hero-btns'>
         <Button
           className='btns'
           buttonStyle='btn--outline2'
@@ -24,7 +25,7 @@ function HeroSection() {
         >
           WATCH TRAILER <i className='far fa-play-circle' />
         </Button> */}
-      </div>
+      </Link>
     </div>
   );
 }

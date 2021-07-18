@@ -41,29 +41,40 @@ function Cook() {
   function handleSearch(list) {
     var temp = [];
     if (list.length > 0) {
-      for (var i = 0; i < list.length; i++) {
-        for (var j = 0; j < recipes.length; j++) {
+      // for (var i = 0; i < list.length; i++) {
+      //   for (var j = 0; j < recipes.length; j++) {
+      //     for (var k = 0; k < recipes[j].recipes.length; k++) {
+      //       if (list[i].name == recipes[j].recipes[k].name) {
+      //         var flat = 0;
+      //         for (var check = 0; check < temp.length; check++) {
+      //           if (recipes[j].name == temp[check].name) {
+      //             flat = 1;
+      //           }
+      //         }
+      for (var j = 0; j < recipes.length; j++) {
+        var count = 0;
+        for (var i = 0; i < list.length; i++) {
+          var check = false;
           for (var k = 0; k < recipes[j].recipes.length; k++) {
-            if (list[i].name == recipes[j].recipes[k].name) {
-              var flat = 0;
-              for (var check = 0; check < temp.length; check++) {
-                if (recipes[j].name == temp[check].name) {
-                  flat = 1;
-                }
-              }
-              if (flat == 0) {
+            if (list[i].name === recipes[j].recipes[k].name) check = true;
+          }
+          if (check === true) {
+            count++;
+          }
+        }
+              if (count===list.length) {
                 temp.push(recipes[j]);
               }
             }
-          }
-        }
-      }
+          // }
+        // }
+      // }
     } else {
       temp = [];
     }
     if (temp.length > 0) {
       setSuggestList(temp);
-    }
+    } else setSuggestList([])
   }
   return (
     <div className = "page">
@@ -136,7 +147,7 @@ function Cook() {
       </div>
 
       <div className="view-under">
-      <div className ="view-side">
+      <div className ="view-side1">
       <h1 className="heading3" data-aos="fade-up">
         <span>Your ingredient</span> here:
       </h1>
@@ -180,7 +191,7 @@ function Cook() {
       </div>
       </div>
 
-    <div className ="view-side">
+    <div className ="view-side2">
     <div className="cook-btn">
         <Button
           className="cook-btn"
@@ -191,7 +202,9 @@ function Cook() {
           SUGGEST
         </Button>
       </div>
+      <div className="list-recipe">
       <ListRecipe recipes={suggestList} />
+      </div>
     </div> 
 
       </div>

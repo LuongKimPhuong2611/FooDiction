@@ -27,7 +27,7 @@ function Tabs() {
   return (
     <div className="container">
       <div className="bloc-tabs">
-        <button
+        <div
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
           onClick={() => {
             toggleTab(1);
@@ -35,8 +35,8 @@ function Tabs() {
           }}
         >
           Fruit
-        </button>
-        <button
+        </div>
+        <div
           className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
           onClick={() => {
             toggleTab(2);
@@ -44,8 +44,8 @@ function Tabs() {
           }}
         >
           Meat, Fish
-        </button>
-        <button
+        </div>
+        <div
           className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
           onClick={() => {
             toggleTab(3);
@@ -53,8 +53,8 @@ function Tabs() {
           }}
         >
           Vegetable
-        </button>
-        <button
+        </div>
+        <div
           className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
           onClick={() => {
             toggleTab(4);
@@ -62,8 +62,8 @@ function Tabs() {
           }}
         >
           Egg, Milk
-        </button>
-        <button
+        </div>
+        <div
           className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
           onClick={() => {
             toggleTab(5);
@@ -71,8 +71,8 @@ function Tabs() {
           }}
         >
           Pasta
-        </button>
-        <button
+        </div>
+        <div
           className={toggleState === 6 ? "tabs active-tabs" : "tabs"}
           onClick={() => {
             toggleTab(6);
@@ -80,8 +80,8 @@ function Tabs() {
           }}
         >
           Grain, Nut
-        </button>
-        <button
+        </div>
+        <div
           className={toggleState === 7 ? "tabs active-tabs" : "tabs"}
           onClick={() => {
             toggleTab(7);
@@ -89,7 +89,7 @@ function Tabs() {
           }}
         >
           Others
-        </button>
+        </div>
       </div>
 
       <div className="content-tabs">

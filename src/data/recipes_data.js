@@ -671,6 +671,7 @@ export const recipes = [
       ingredients[5],
       ingredients[29],
       ingredients[0],
+      ingredients[7],
     ],
     countIngre: [1, 2, 1, 3],
     list_cate: ["Low-Carb", "Low-Fat", "HCG"],

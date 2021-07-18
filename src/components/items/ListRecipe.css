@@ -1,6 +1,7 @@
 .recipes {
   padding: 2rem 1rem 2rem 1rem ;
   background:var(--white);
+  /* display: flex; */
 }
 
 h1 {
